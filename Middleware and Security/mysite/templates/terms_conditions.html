@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <div class="header">
+            <p> 
+                <ul>
+                    <li style="float:right"> <input class="search" type="text"> <button class="button_4" type="submit">Search</button></li>
+                    <li style="float:right"><a class="active" href="{% url 'Gallery' %}">Galleries</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'about_us' %}">About Us</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li style="float:left"><button class="button_3">Donate</button></li>
+                </ul>
+            </p>
+            <h1 class="h1a1 logo">Come grow with us!</h1>
+            
+            <ul>
+                <li style="float:right"><a class="active" onclick="document.getElementById('id01').style.display='block'">Sign In</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Join_Us' %}">Join Us</a></li>
+                <li style="float:right"><a class="active" href="{% url 'our_work' %}">Our Work</a></li>
+                <li style="float:right"><a class="active" href="{% url 'members' %}">Members</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Resources' %}">Resources</a></li>
+                <li style="float:left" id="geolocate"><button class="button_2" onclick="getLocation()">Geolocation</button></li>
+            </ul>
+        </div>
+                <li style="float:right"><a class="active" href="./Sign In.html">Sign In</a></li>
+                <li style="float:right"><a class="active" href="./Join_Us_e.html">Join Us</a></li>
+                <li style="float:right"><a class="active" href="./Our Work.html">Our Work</a></li>
+                <li style="float:right"><a class="active" href="./Members.html">Members</a></li>
+                <li style="float:right"><a class="active" href="./Resources.html">Resources</a></li>
+                <li style="float:right"><a class="active" href="./P458I.html">Home</a></li>
+                <li style="float:left" id="geolocate"><button class="button_2" onclick="getLocation()">Geolocation</button></li>
+            </ul>
+        </div>
+        <div>
+        <footer class="footer"> Site Map | <a href="{% url 'terms_conditions' %}">Terms & Conditions</a> | <a href="{% url 'privacy_policy' %}">Privacy Policy</a> | Coypright @ 2021
+        </footer>
+        </div>
+{% endblock %}

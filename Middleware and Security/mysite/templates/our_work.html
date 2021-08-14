@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+         <div class="header">
+            <p> 
+                <ul>
+                    <li style="float:right"> <input class="search" type="text"> <button class="button_4" type="submit">Search</button></li>
+                    <li style="float:right"><a class="active" href="{% url 'Gallery' %}">Galleries</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'about_us' %}">About Us</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li style="float:left"><button class="button_3">Donate</button></li>
+                </ul>
+            </p>
+            <h1 class="h1a1 logo">Come grow with us!</h1>
+            
+            <ul>
+                <li style="float:right"><a class="active" onclick="document.getElementById('id01').style.display='block'">Sign In</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Join_Us' %}">Join Us</a></li>
+                <li style="float:right"><a class="active" href="{% url 'our_work' %}">Our Work</a></li>
+                <li style="float:right"><a class="active" href="{% url 'members' %}">Members</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Resources' %}">Resources</a></li>
+                <li style="float:left" id="geolocate"><button class="button_2" onclick="getLocation()">Geolocation</button></li>
+            </ul>
+        </div>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <img src="media/tree_of_life_yggdrasil.jpg" alt="yggdrasil" class="treepicsize2">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu scelerisque felis imperdiet proin fermentum leo vel. Pellentesque id nibh tortor id aliquet. Iaculis nunc sed augue lacus. Hac habitasse platea dictumst vestibulum rhoncus est. Quis ipsum suspendisse ultrices gravida dictum fusce. Purus viverra accumsan in nisl nisi. Tincidunt vitae semper quis lectus nulla at. Condimentum vitae sapien pellentesque habitant morbi tristique senectus et. Lorem ipsum dolor sit amet. Tincidunt arcu non sodales neque sodales. Pulvinar elementum integer enim neque. Gravida in fermentum et sollicitudin. Duis convallis convallis tellus id interdum velit laoreet id donec. Dictum sit amet justo donec enim diam. Elementum eu facilisis sed odio morbi. Lacus sed turpis tincidunt id aliquet risus feugiat in. Ultrices sagittis orci a scelerisque purus.
+        <br>
+        Massa tincidunt dui ut ornare lectus sit amet est. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Id interdum velit laoreet id donec ultrices tincidunt arcu. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Pharetra et ultrices neque ornare aenean. Est ullamcorper eget nulla facilisi etiam dignissim. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Duis convallis convallis tellus id. Nunc scelerisque viverra mauris in aliquam sem. Faucibus interdum posuere lorem ipsum dolor. Penatibus et magnis dis parturient. Accumsan sit amet nulla facilisi morbi tempus iaculis. Non sodales neque sodales ut etiam sit amet nisl purus. Quis varius quam quisque id diam vel quam elementum pulvinar. Nunc sed augue lacus viverra vitae. Sit amet luctus venenatis lectus magna fringilla urna. Integer enim neque volutpat ac tincidunt vitae semper quis lectus.
+        <br>
+        Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis. Felis donec et odio pellentesque diam. Magna eget est lorem ipsum dolor sit amet consectetur adipiscing. Mauris a diam maecenas sed enim ut sem. Sed cras ornare arcu dui vivamus arcu felis bibendum ut. Est placerat in egestas erat imperdiet sed euismod nisi. Platea dictumst vestibulum rhoncus est pellentesque elit. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Tincidunt ornare massa eget egestas purus viverra. Quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper.
+        </p>
+        <div>
+        <footer class="footer"> Site Map | <a href="{% url 'terms_conditions' %}">Terms & Conditions</a> | <a href="{% url 'privacy_policy' %}">Privacy Policy</a> | Coypright @ 2021
+        </footer>
+        </div>
+{% endblock %}

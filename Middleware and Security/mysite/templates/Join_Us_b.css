@@ -1,0 +1,302 @@
+.header {
+    background-image: url(media/istockphoto-1091733118-1024x1024.jpg);
+    text-align: center;
+    padding: 20px;
+  }
+
+.topnav {
+    display: block;
+    background-color: rgb(21, 73, 21);
+    float: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight:bold;
+    }
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+    }
+
+.h1a1 {
+    margin-left: 40%;
+}
+
+.logo {
+font-size: 60px;
+font-weight: 900;
+font-family: cursive;
+font-style: italic;
+color: limegreen;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: black;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(21, 73, 21);
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-weight:bold; 
+}
+
+body {
+    background-color: darkolivegreen;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 40%;
+    padding: 15px;
+  }
+
+  .column_b {
+    float: right;
+    width: 40%;
+    padding: 15px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+img {
+   margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+}
+
+.h2a2 {
+   background-color: rgb(21, 73, 21);
+}
+
+.treepicsize {
+height: 500px;
+width: 25%;
+}
+
+.rollover {
+
+}
+
+.rolloverlink {
+opacity: 1.0;
+}
+
+.rolloverlink:hover {
+opacity: 0.8;
+}
+
+.media {
+
+}
+
+.thr3d {
+box-shadow: 20px 30px 10px rgba(0,0,0,0.5);
+}
+
+.imageborder {
+border-style: ridge;
+border-width: 1px;
+border-color: black;
+}
+
+.buttontext1 {
+text-align: center;
+margin-top: 12px;
+font-size: 45px;
+font-weight: 900;
+color: limegreen;
+text-decoration: black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+}
+
+.buttontext2 {
+text-align: center;
+margin-top: 12px;
+font-size: 45px;
+font-weight: 900;
+color: limegreen;
+text-decoration: black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+}
+
+.buttontext3 {
+text-align: center;
+margin-top: 12px;
+font-size: 45px;
+font-weight: 900;
+color: limegreen;
+text-decoration: black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+}
+
+.plantingbutton {
+height: 155px;
+width: 300px;
+font-size: 50px;
+font-weight: 900;
+color: limegreen;
+text-decoration: black;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: black;
+}
+
+.h2a3 {
+   background-color:  rgb(21, 73, 21);
+}
+
+.h2a4 {
+  text-align: center;
+  color:  gold;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+div#box1 {
+    float: left;
+    background-color: rgb(21, 73, 21);
+    color: whitesmoke;
+    }
+
+div#box2 {
+   
+    background-color: rgb(16, 16, 59);
+    color: whitesmoke;
+     }
+
+div#box3 {
+    margin-left: 25%;
+    background-color: rgb(16, 16, 59);
+    color: whitesmoke;
+    }
+
+div#box4 {
+    float: right;
+    background-color: rgb(16, 16, 59);
+    color: whitesmoke;
+   }
+  
+  .box{
+    background-color: gold;
+    width: 200px;
+    border: 5px solid goldenrod;
+    padding: 6px;
+    margin: 10px;
+    display: inline-block;
+  }
+
+  .button {
+    margin-top: 12px;
+    margin-right: 6px;
+  }
+
+  .p1a {
+    font-size: 24px;
+    font-weight: 20px;
+    color: azure;
+    margin-left: 15px;
+  }
+
+  .p2 {
+    font-weight: 8px;
+    font-size: 20px;
+    margin-left: 12px;
+  }
+
+  iframe {
+    margin-left: auto;
+   margin-right: auto;
+   display: block;
+  }
+
+  a {
+    color: ghostwhite;
+  }
+
+  h3 {
+    background-color:rgb(21, 73, 21);
+  }
+.label {
+    display: inline-block;
+    width: 400px;
+}
+.form {
+    width: 32%;
+    height: 520px;
+    margin: auto;
+    background:  rgb(21, 73, 21);
+    padding: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+    text-align: justify;
+}
+.formbutton {
+    text-align: center;
+    color: blue;
+}
+.feedback {
+    width: 30%;
+    height: 100px;
+    background: black;
+    margin: auto;
+    color: white;
+    padding: 25px;
+}
+
+.label_2 {
+    display: inline-block;
+    width: 100px;
+}
+
+.button_2 {
+    margin-top: 12px;
+    margin-left: 10px;
+    }
+  
+.button_3 {
+margin-top: 12px;
+margin-left: 10px;
+background-color: rgb(12, 248, 111);
+border-radius: 8px;
+}
+  
+.button_4 {
+margin-top: 12px;
+margin-right: 10px;
+}

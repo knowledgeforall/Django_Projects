@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <div class="header">
+            <p> 
+                <ul>
+                    <li style="float:right"> <input class="search" type="text"> <button class="button_4" type="submit">Search</button></li>
+                    <li style="float:right"><a class="active" href="{% url 'Gallery' %}">Galleries</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'about_us' %}">About Us</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li style="float:left"><button class="button_3">Donate</button></li>
+                </ul>
+            </p>
+            <h1 class="h1a1 logo">Come grow with us!</h1>
+            
+            <ul>
+                <li style="float:right"><a class="active" onclick="document.getElementById('id01').style.display='block'">Sign In</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Join_Us' %}">Join Us</a></li>
+                <li style="float:right"><a class="active" href="{% url 'our_work' %}">Our Work</a></li>
+                <li style="float:right"><a class="active" href="{% url 'members' %}">Members</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Resources' %}">Resources</a></li>
+                <li style="float:left" id="geolocate"><button class="button_2" onclick="getLocation()">Geolocation</button></li>
+            </ul>
+        </div>
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <img src="media/tree_of_life_yggdrasil.jpg" alt="yggdrasil" class="treepicsize2">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Platea dictumst quisque sagittis purus sit amet volutpat consequat mauris. At lectus urna duis convallis convallis. Bibendum ut tristique et egestas quis. Nullam non nisi est sit amet facilisis magna. Ornare lectus sit amet est placerat in egestas. Iaculis urna id volutpat lacus laoreet. Quis enim lobortis scelerisque fermentum dui faucibus in ornare quam. Purus semper eget duis at tellus at. Pulvinar mattis nunc sed blandit libero volutpat sed cras. Faucibus in ornare quam viverra orci sagittis eu.
+    <br>
+    Quis lectus nulla at volutpat diam ut venenatis tellus. Elementum sagittis vitae et leo duis ut diam quam nulla. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Pellentesque habitant morbi tristique senectus et netus et. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Et tortor consequat id porta nibh. In ornare quam viverra orci sagittis. Id semper risus in hendrerit. Consectetur lorem donec massa sapien faucibus et molestie ac feugiat. Eleifend donec pretium vulputate sapien nec sagittis aliquam. Mauris pellentesque pulvinar pellentesque habitant morbi tristique. Nec ultrices dui sapien eget mi proin sed libero enim. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Maecenas volutpat blandit aliquam etiam. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Volutpat maecenas volutpat blandit aliquam. Etiam sit amet nisl purus in mollis. Turpis tincidunt id aliquet risus.
+    <br>
+    Aliquam sem et tortor consequat id porta. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Cursus in hac habitasse platea. Fames ac turpis egestas sed tempus. Diam maecenas sed enim ut sem viverra. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit duis. Laoreet non curabitur gravida arcu. Nisl tincidunt eget nullam non nisi est sit amet facilisis. Euismod nisi porta lorem mollis aliquam ut. Amet tellus cras adipiscing enim eu. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Amet purus gravida quis blandit turpis cursus in. Eget arcu dictum varius duis at consectetur.
+    <br>
+    In hendrerit gravida rutrum quisque. Ut ornare lectus sit amet est placerat in. Quam nulla porttitor massa id neque. Mi bibendum neque egestas congue quisque. Erat nam at lectus urna. Ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Rhoncus urna neque viverra justo. Consequat interdum varius sit amet mattis vulputate enim nulla. Pellentesque sit amet porttitor eget dolor morbi non arcu. Sed viverra ipsum nunc aliquet bibendum enim facilisis. Dis parturient montes nascetur ridiculus mus. Nibh praesent tristique magna sit amet purus. Non consectetur a erat nam at lectus urna. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Nunc congue nisi vitae suscipit tellus mauris a diam maecenas. Laoreet sit amet cursus sit amet dictum sit amet. Congue eu consequat ac felis donec et.
+    <br>
+    Lorem ipsum dolor sit amet consectetur. Gravida quis blandit turpis cursus. Augue mauris augue neque gravida in. Iaculis at erat pellentesque adipiscing commodo elit at. Interdum consectetur libero id faucibus nisl tincidunt eget. Id semper risus in hendrerit gravida rutrum. Tempus urna et pharetra pharetra massa. Amet justo donec enim diam vulputate ut pharetra. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Facilisi nullam vehicula ipsum a arcu cursus vitae. Donec et odio pellentesque diam volutpat commodo sed egestas egestas. Nisi porta lorem mollis aliquam ut porttitor leo a. At in tellus integer feugiat scelerisque varius. Egestas maecenas pharetra convallis posuere morbi.
+    </p>
+        <div>
+        <footer class="footer"> Site Map | <a href="{% url 'terms_conditions' %}">Terms & Conditions</a> | <a href="{% url 'privacy_policy' %}">Privacy Policy</a> | Coypright @ 2021
+        </footer>
+        </div>
+{% endblock %}

@@ -1,0 +1,177 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+        <div class="header">
+            <p> 
+                <ul>
+                    <li style="float:right"> <input class="search" type="text"> <button class="button_4" type="submit">Search</button></li>
+                    <li style="float:right"><a class="active" href="{% url 'Gallery' %}">Galleries</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'about_us' %}">About Us</a></li>
+                    <li style="float:right"><a class="active" href="{% url 'contact_us' %}">Contact Us</a></li>
+                    <li style="float:left"><button class="button_3">Donate</button></li>
+                </ul>
+            </p>
+            <h1 class="h1a1 logo">Come grow with us!</h1>
+            
+            <ul>
+                <li style="float:right"><a class="active" onclick="document.getElementById('id01').style.display='block'">Sign In</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Join_Us' %}">Join Us</a></li>
+                <li style="float:right"><a class="active" href="{% url 'our_work' %}">Our Work</a></li>
+                <li style="float:right"><a class="active" href="{% url 'members' %}">Members</a></li>
+                <li style="float:right"><a class="active" href="{% url 'Resources' %}">Resources</a></li>
+                <li style="float:left" id="geolocate"><button class="button_2" onclick="getLocation()">Geolocation</button></li>
+            </ul>
+        </div>
+    
+        <div id="id01" class="modal">
+          <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <img src="media/tree_of_life_yggdrasil.jpg" alt="yggdrasil" class="treepicsize2">
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <div>
+            <iframe style="background-image: url(media/Banner_IgniteBlog_1-1500x500.jpg);
+                                   background-size: 1500px 500px"
+                            class = "treepicsize media"
+                            title="PastWork">
+            </iframe>
+            
+
+            <div class="row">
+                <div>
+                    <div class="rollover">
+                        <a href="{% url 'past_work' %}" class="column">
+                            <img src="media/past_work.jpg"
+                                 alt="sapling"
+                                 title="Planting a Sapling"
+                                 class="plantingbutton1 media">
+                            <div>
+                                <p class="buttontext1"> Past Work</p>
+                            </div>
+                        </a>
+                    </div>
+                   
+                        
+                  
+                    <div class="row">
+                        <div>
+                            <div class="rollover">
+                                <a href="{% url 'our_vision' %}" class="column_b">
+                                    <img src="media/our_vision.jpg"
+                                         alt="Rainbow"
+                                         title="Rainbow World"
+                                         class="plantingbutton1 media">
+                                    <div>
+                                        <p class="buttontext1"> Our Vision</p>
+                                    </div>
+                                </a>
+                            </div>
+            
+                    <div class="rollover">
+                        <a href="{% url 'current_work' %}" class="column">
+                            <img src="media/current_work.jpg"
+                                 alt="forest"
+                                 title="Planting a Forest"
+                                 class="plantingbutton2 media">
+                            <div>
+                                <p class="buttontext2">Current Work</p>
+                            </div>
+                        </a>
+                    </div >
+
+                    <div class="rollover">
+                        <a href="{% url 'future_work' %}" class="column_b">
+                            <img src="media/future_work.jpg"
+                                 alt="Dronepic"
+                                 title="Planting With Drones"
+                                 class="plantingbutton3 media">
+                            <div>
+                                <p class="buttontext3">Future Work</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <p class="p2a2">Media</p>
+           
+             <audio class="media2" id="audio" controls="">
+                <source src="media/european_forest.mp3" type="audio/mpeg">Please update your browser does not support the audio element.
+            </audio>
+            <iframe class="media" width="460" height="240"
+            src="https://www.youtube.com/embed/EkNdrTZ7CG4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </ul>
+            <img id="sapling" src="media/unnamed.png" draggable="true" ondragstart="drag(event)" width="70" height="100">
+            
+            <div class="div5" id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div>
+                    <img style="background-image: url(media/clearcut.jpg); 
+                    background-size: 350px 350px" >
+                </div>
+            </div>
+
+            <ul>
+                <p class="p1a"> What's New</p>
+            </ul>
+                <p class="p2">
+                    Click on the tabs see the most recents things that are happening.
+                </p>
+                <div class="box" id="box1">
+                    <a style="text-decoration:none" href="./Announcements.html"> <h2 class="h2a4">  Announcements </h2>  </a>
+                </div> 
+                <div class="box" id="box1">
+                    <a style="text-decoration:none" href="./Feature News.html"> <h2 class="h2a4">  Feature News </h2>  </a>
+                </div>
+            </div>
+        </div>
+           
+        <ul>
+            <p class="p1a"> <a style="text-decoration:none" href="./Feature Activities.html"> Feature Activities </a> </p>
+        </ul>
+            <p class="p2">
+                Click to see our highlight activities.
+            </p>
+        <ul>
+            <p class="p1a"> </p>
+            <div class="box" id="box2">
+                <h2 class="h3">  Address <br > Phone <br > Email <br> Website </h2>  
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h3"> <a style="text-decoration:none" href="./Get Involved.html"> Get Involved  </a> <br > 
+                <h2 class="h3"> <a style="text-decoration:none" href="./Blog.html"> Blog </a> <br > 
+                <h2 class="h3"> <a style="text-decoration:none" href="./Ways to Give.html"> Ways to Give </a> <br> </h2>  
+            </div>
+            <div class="box" id="box4">
+                <h2 class="h3"> <a style="text-decoration:none" href="./About Us.html"> About Us</a> <br > 
+                <h2 class="h3"> <a style="text-decoration:none" href="./Revenues.html"> Revenues </a> <br > 
+                <h2 class="h3"> <a style="text-decoration:none" href="./Expenditures.html"> Expenditures </a> <br> </h2>  
+            </div>
+        </ul>
+        <div>
+        <footer class="footer"> Site Map | <a href="{% url 'terms_conditions' %}">Terms & Conditions</a> | <a href="{% url 'privacy_policy' %}">Privacy Policy</a> | Coypright @ 2021
+        </footer>
+        </div>
+{% endblock %}
